@@ -1,21 +1,24 @@
-%define name radeon-rlc-firmware
-%define version 1
-%define release %mkrel 5
+%define name radeon-firmware
+%define version 20110310
+%define release %mkrel 1
 
-Summary: ATI R600/R700/Evergreen/Fusion RLC Firmware
+Summary: ATI R600/R700/Evergreen/Fusion Firmware
 Name:	 %{name}
 Version: %{version}
 Release: %{release}
 # extracted from git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git
+# all files in radeon/ dir excluding the files in kernel-firmware
 Source0: %{name}-%{version}.tar.xz
 License: Proprietary
 Group:	 System/Kernel and hardware
 Url:	 http://ati.amd.com/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
+Obsoletes: radeon-rlc-firmware
+Conflicts: kernel-firmware-extra < 20110310-1
 
 %description
-This is Ati Radeon R600/R700/Evergreen (HD5xxx)/Fusion RLC firmware needed
+This is Ati Radeon R600/R700/Evergreen (HD5xxx)/Fusion firmware needed
 for IRQ handling. It's needed for R600/R700/Evergreen/Fusion KMS support
 beginning with 2.6.33 series kernels.
 
