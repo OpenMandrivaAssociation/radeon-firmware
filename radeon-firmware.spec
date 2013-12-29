@@ -1,6 +1,6 @@
 %define name radeon-firmware
 %define version 20110310
-%define release 2
+%define release 3
 
 Summary: ATI R600/R700/Evergreen/Fusion Firmware
 Name:	 %{name}
