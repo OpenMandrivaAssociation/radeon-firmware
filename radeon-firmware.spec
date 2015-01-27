@@ -4,7 +4,7 @@
 
 Summary: ATI R600/R700/Evergreen/Fusion Firmware
 Name:	 %{name}
-Version: %{version}
+Version: obsoleted by kernel-firmware
 Release: %{release}
 # extracted from git://git.kernel.org/pub/scm/linux/kernel/git/dwmw2/linux-firmware.git
 # all files in radeon/ dir excluding the files in kernel-firmware
