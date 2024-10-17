@@ -11,7 +11,7 @@ Release: %{release}
 Source0: %{name}-%{version}.tar.xz
 License: Proprietary
 Group:	 System/Kernel and hardware
-Url:	 http://ati.amd.com/
+Url:	 https://ati.amd.com/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 Obsoletes: radeon-rlc-firmware
